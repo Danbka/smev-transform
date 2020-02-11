@@ -1,0 +1,30 @@
+{
+    "name": "danbka/smev-transform",
+    "description": "Реализация алгоритма трансформации urn://smev-gov-ru/xmldsig/transform для СМЭВ3",
+    "keywords": ["smev", "смэв"],
+    "license": "MIT",
+    "authors": [{
+        "name": "Daniil Gorokh",
+        "email": "daniil.gorokh@gmail.com"
+    }],
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "ext-xmlreader": "*",
+        "ext-xmlwriter": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Danbka\\Smev\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Danbka\\Smev\\Tests\\": "tests"
+        }
+    }
+}
