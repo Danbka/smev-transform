@@ -41,7 +41,7 @@ class Transform
             
             while ($xmlReader->read()) {
                 if ($xmlReader->nodeType == XMLReader::TEXT) {
-                    if (!empty(trim($xmlReader->value))) {
+                    if (trim($xmlReader->value) !== '') {
                         $xmlWriter->text($xmlReader->value);
                     }
                     continue;
